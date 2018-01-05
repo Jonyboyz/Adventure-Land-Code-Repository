@@ -1,0 +1,36 @@
+setInterval(function(){
+
+	if (character.hp < character.max_hp - 400 || character.mp < character.max_mp - 600) {
+                use_hp_or_mp();
+            }   
+	loot();
+
+},1000/4); // Loops every 1/4 seconds.
+
+
+
+
+var target;
+setInterval(function(){
+if(!target)
+	var target = get_nearest_monster({type:''});
+	
+if(can_attack(target))
+		attack(target);
+},1/4);
+
+///Base for Farming while NOT moving
+
+setInterval(function()
+    {
+    drawstuff(get_targeted_monster());
+    },10);
+
+function drawstuff(target)
+{
+    clear_drawings();
+    draw_circle(character.real_x,character.real_y,character.range,1.5,0x0000FF);
+    if (target)
+        draw_circle(target.real_x,target.real_y,G.monsters[target.mtype].range,.5,0xFF0000);
+}
+
