@@ -1,0 +1,82 @@
+
+
+setInterval(function(){ 
+	exchange(0);
+},1000/4);
+
+
+setInterval(function(){ 
+	exchange(1);
+},1000/4);
+
+
+sell(2); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(2);
+}
+
+sell(3); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(3);
+}
+
+sell(4); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(4);
+}
+
+sell(5); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(5);
+}
+
+sell(6); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(6);
+}
+
+sell(7); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(7);
+}
+
+sell(8); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(8);
+}
+
+sell(9); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(9);
+}
+
+sell(10); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(10);
+}
+
+sell(11); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(11);
+}
+
+sell(12); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(12);
+}
+
+sell(13); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(13);
+}
+
+sell(14); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(14);
+}
+
+sell(15); //sell an item from character.items by it's order -0 to N-1
+{
+	parent.sell(15);
+}
+
