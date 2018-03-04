@@ -4,16 +4,8 @@ var nodeType = {
     WALKING: 0,
     TARGETING: 1
 };
-var whitelist = ["bank","meet","tiny","phoenix","Ace","shot","0x03","0x02","0x01","0x00","Angel","Kane","Carolina","Jhon","MOBSans","batranger","batsupport",'batmerch',"batman435493","GhostKing","batman43549","Storage1","24Sans24","SansSupport","Meadow", "SpadarFaar", "Foaly", "Maela", "Conrad", "Brutus", "Trexnamedtom", "Trexnamedtut", "Trexnamedted", "Trexnamedtim", "Trexnamedtod","Phoenix","0x00","TexTheSniper","AinzOoalGown","Snipe","Carolina","Jhon","MOBSans","batranger","batsupport",'batmerch',"batman435493","GhostKing","batman43549","Storage1","24Sans24","SansSupport","Meadow", "SpadarFaar", "Foaly", "Maela", "Conrad", "Brutus", "Trexnamedtom", "Trexnamedtut", "Trexnamedted", "Trexnamedtim", "Trexnamedtod", "Star", "Paloo", "Ploo", "Plu2", "Velexine", "Pauline", "Muhnch", "Muhncheez", "MuhnchPriest", "MuhnchArcher", "Muhncheeez", "Muhnchant", "Rhea", "RayHawkeye", "Hyperia", "Ally", "Kanna", "StreetVendor", "Nonitah", "Brian1397", "glenjamin", "SeMasa", "RetroMVP", "whoreeater", "FrozenArrow", "FrozenPriest", "MoltenRanger", "FrozenMage", "FrozenRogue", "Vladmir", "Ryuzakii", "Shiina", "Rukawa", "Killua", "nobodyhere", "nobodythat", "Iamanoob", "Elfwannabe", "nobodutanks", "NexusNull", "Clover", "Emerald", "Arcus", "Harold", "Sorbo", "Saboth", "Stitches", "Warez", "kwann", "MrPiggles", "Beatrice"];
+var whitelist = ['xXWhyNotXx','xXCoolGuyXx','Rile','Wizard','Carolina','BlazingSnip','jeffhero',"bank","meet","tiny","phoenix","Ace","shot","0x03","0x02","0x01","0x00","Angel","Kane","Carolina","Jhon","MOBSans","batranger","batsupport",'batmerch',"batman435493","GhostKing","batman43549","Storage1","24Sans24","SansSupport","Meadow", "SpadarFaar", "Foaly", "Maela", "Conrad", "Brutus", "Trexnamedtom", "Trexnamedtut", "Trexnamedted", "Trexnamedtim", "Trexnamedtod","Phoenix","0x00","TexTheSniper","AinzOoalGown","Snipe","Carolina","Jhon","MOBSans","batranger","batsupport",'batmerch',"batman435493","GhostKing","batman43549","Storage1","24Sans24","SansSupport","Meadow", "SpadarFaar", "Foaly", "Maela", "Conrad", "Brutus", "Trexnamedtom", "Trexnamedtut", "Trexnamedted", "Trexnamedtim", "Trexnamedtod", "Star", "Paloo", "Ploo", "Plu2", "Velexine", "Pauline", "Muhnch", "Muhncheez", "MuhnchPriest", "MuhnchArcher", "Muhncheeez", "Muhnchant", "Rhea", "RayHawkeye", "Hyperia", "Ally", "Kanna", "StreetVendor", "Nonitah", "Brian1397", "glenjamin", "SeMasa", "RetroMVP", "whoreeater", "FrozenArrow", "FrozenPriest", "MoltenRanger", "FrozenMage", "FrozenRogue", "Vladmir", "Ryuzakii", "Shiina", "Rukawa", "Killua", "nobodyhere", "nobodythat", "Iamanoob", "Elfwannabe", "nobodutanks", "NexusNull", "Clover", "Emerald", "Arcus", "Harold", "Sorbo", "Saboth", "Stitches", "Warez", "kwann", "MrPiggles", "Beatrice"];
 
-
-setInterval(function(){
-	
-	send_party_invite("TexTheSniper");
-	send_party_invite("SansSupport");
-	send_party_invite("MOBSans");
-	
-},10000);
 
 
 var path = [
@@ -273,39 +265,3 @@ on_destroy = function(){
 };
 
 
-setInterval(function(){
-    
-    //set to true if you wish to send items
-    var sending = true;
-    //set items you wish to send here
-    var sendWhitelist = ['gem1','shield','seashell','firestaff','xmasornamet','hpamulet','candycane','quiver','strearring','vitearring','intearring','dexearring','x0','x1','x2','x3','x4','x5','x6','x7','x8','xmasornament','mistletoe','hpbelt','wbook0','ringsj',"dexring", "fclaw", 'dexbelt', 'fury', 'mittens', 't2dexamulet'];
-    //set person you wish to send items to here
-    var reciver = "SansSupport";
-    
-    if(sending)
-    {
-        for(let i in character.items){
-            let item = character.items[i];
-            if(item && sendWhitelist.indexOf(item.name) !== -1){
-                send_item(reciver,i)
-            }
-        }
-    }
-
-},2000);
-
-
-
-setInterval(function(){
-
-	loot();
-	
-},1000/4);
-//////////////////////////////////
-
-
-
-
-setInterval(function(){
-	if(character.gold>1) send_gold("SansSupport",character.gold)
-},1000/4);
